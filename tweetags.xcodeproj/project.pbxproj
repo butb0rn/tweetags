@@ -21,6 +21,8 @@
 		8F5C0C251943C55B00BB538B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5C0C071943C55B00BB538B /* UIKit.framework */; };
 		8F5C0C2D1943C55B00BB538B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C2B1943C55B00BB538B /* InfoPlist.strings */; };
 		8F5C0C2F1943C55B00BB538B /* tweetagsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5C0C2E1943C55B00BB538B /* tweetagsTests.m */; };
+		8F5C0C391943E2B800BB538B /* tweetags.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C381943E2B800BB538B /* tweetags.jpg */; };
+		8F5C0C3B1943E6AC00BB538B /* sign_in_button_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8F5C0C2A1943C55B00BB538B /* tweetagsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tweetagsTests-Info.plist"; sourceTree = "<group>"; };
 		8F5C0C2C1943C55B00BB538B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F5C0C2E1943C55B00BB538B /* tweetagsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tweetagsTests.m; sourceTree = "<group>"; };
+		8F5C0C381943E2B800BB538B /* tweetags.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tweetags.jpg; sourceTree = "<group>"; };
+		8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_in_button_twitter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		8F5C0C091943C55B00BB538B /* tweetags */ = {
 			isa = PBXGroup;
 			children = (
+				8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */,
+				8F5C0C381943E2B800BB538B /* tweetags.jpg */,
 				8F5C0C121943C55B00BB538B /* AppDelegate.h */,
 				8F5C0C131943C55B00BB538B /* AppDelegate.m */,
 				8F5C0C151943C55B00BB538B /* Main.storyboard */,
@@ -229,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F5C0C1C1943C55B00BB538B /* Images.xcassets in Resources */,
+				8F5C0C391943E2B800BB538B /* tweetags.jpg in Resources */,
 				8F5C0C0E1943C55B00BB538B /* InfoPlist.strings in Resources */,
 				8F5C0C171943C55B00BB538B /* Main.storyboard in Resources */,
+				8F5C0C3B1943E6AC00BB538B /* sign_in_button_twitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
