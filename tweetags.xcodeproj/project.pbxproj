@@ -23,6 +23,7 @@
 		8F5C0C2F1943C55B00BB538B /* tweetagsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5C0C2E1943C55B00BB538B /* tweetagsTests.m */; };
 		8F5C0C391943E2B800BB538B /* tweetags.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C381943E2B800BB538B /* tweetags.jpg */; };
 		8F5C0C3B1943E6AC00BB538B /* sign_in_button_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */; };
+		8F5C0C3E1943F3CD00BB538B /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5C0C3D1943F3CD00BB538B /* AccountsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		8F5C0C2E1943C55B00BB538B /* tweetagsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tweetagsTests.m; sourceTree = "<group>"; };
 		8F5C0C381943E2B800BB538B /* tweetags.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tweetags.jpg; sourceTree = "<group>"; };
 		8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_in_button_twitter.png; sourceTree = "<group>"; };
+		8F5C0C3C1943F3CD00BB538B /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		8F5C0C3D1943F3CD00BB538B /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				8F5C0C191943C55B00BB538B /* ViewController.m */,
 				8F5C0C1B1943C55B00BB538B /* Images.xcassets */,
 				8F5C0C0A1943C55B00BB538B /* Supporting Files */,
+				8F5C0C3C1943F3CD00BB538B /* AccountsViewController.h */,
+				8F5C0C3D1943F3CD00BB538B /* AccountsViewController.m */,
 			);
 			path = tweetags;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			files = (
 				8F5C0C1A1943C55B00BB538B /* ViewController.m in Sources */,
 				8F5C0C141943C55B00BB538B /* AppDelegate.m in Sources */,
+				8F5C0C3E1943F3CD00BB538B /* AccountsViewController.m in Sources */,
 				8F5C0C101943C55B00BB538B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
