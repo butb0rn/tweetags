@@ -8,6 +8,8 @@
 
 #import "AccountsViewController.h"
 
+
+
 @interface AccountsViewController ()
 
 @end
@@ -26,7 +28,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.accounts = [[NSMutableArray alloc] init];
+    [self retrieveAccounts:ACAccountTypeIdentifierTwitter options:nil];
+}
+
+- (void)retrieveAccounts: (NSString *)identifier options:(NSDictionary *)options {
+    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:identifier];
+    [accountStore requestAccessToAccountsWithType:accountType options:options completion:^(BOOL granted, NSError *error) {
+        if (granted) {
+            [self.accounts addObjectsFromArray:[accountStore accountsWithAccountType:accountType]];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +50,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.accounts count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellId = @"accountCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    ACAccount *account = self.accounts[indexPath.row];
+    cell.textLabel.text = account.accountDescription;
+    return cell;
+}
+
+
 
 /*
 #pragma mark - Navigation

@@ -24,6 +24,7 @@
 		8F5C0C391943E2B800BB538B /* tweetags.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C381943E2B800BB538B /* tweetags.jpg */; };
 		8F5C0C3B1943E6AC00BB538B /* sign_in_button_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */; };
 		8F5C0C3E1943F3CD00BB538B /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5C0C3D1943F3CD00BB538B /* AccountsViewController.m */; };
+		8F5C0C401943FE1500BB538B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5C0C3F1943FE1500BB538B /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		8F5C0C3A1943E6AC00BB538B /* sign_in_button_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_in_button_twitter.png; sourceTree = "<group>"; };
 		8F5C0C3C1943F3CD00BB538B /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
 		8F5C0C3D1943F3CD00BB538B /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		8F5C0C3F1943FE1500BB538B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5C0C401943FE1500BB538B /* Accounts.framework in Frameworks */,
 				8F5C0C061943C55B00BB538B /* CoreGraphics.framework in Frameworks */,
 				8F5C0C081943C55B00BB538B /* UIKit.framework in Frameworks */,
 				8F5C0C041943C55B00BB538B /* Foundation.framework in Frameworks */,
@@ -108,6 +111,7 @@
 		8F5C0C021943C55B00BB538B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F5C0C3F1943FE1500BB538B /* Accounts.framework */,
 				8F5C0C031943C55B00BB538B /* Foundation.framework */,
 				8F5C0C051943C55B00BB538B /* CoreGraphics.framework */,
 				8F5C0C071943C55B00BB538B /* UIKit.framework */,
